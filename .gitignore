@@ -8,6 +8,6 @@ packaging/obj/
 *.user.*
 .vs/
 .idea/
-
+*_example.json
 # Локальные артефакты окружения
 aqtinstall.log
