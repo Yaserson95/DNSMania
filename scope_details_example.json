@@ -1,0 +1,56 @@
+{
+    "CimClass": {
+        "CimSuperClassName": null,
+        "CimSuperClass": null,
+        "CimClassProperties": [
+            "FileName",
+            "ZoneName",
+            "ZoneScope"
+        ],
+        "CimClassQualifiers": [
+            "ClassVersion = \"1.0.0\"",
+            "dynamic = True",
+            "locale = 1033",
+            "provider = \"DnsServerPSProvider\""
+        ],
+        "CimClassMethods": [
+
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        }
+    },
+    "CimInstanceProperties": [{
+            "Name": "FileName",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NotModified, NullValue",
+            "IsValueModified": false
+        }, {
+            "Name": "ZoneName",
+            "Value": "augsgip.lan",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "ZoneScope",
+            "Value": "RST-L4-Scope",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }
+    ],
+    "CimSystemProperties": {
+        "Namespace": "root/Microsoft/Windows/DNS",
+        "ServerName": "MRG-DC01",
+        "ClassName": "DnsZoneScope",
+        "Path": null
+    },
+    "FileName": null,
+    "ZoneName": "augsgip.lan",
+    "ZoneScope": "RST-L4-Scope",
+    "PSComputerName": null
+}

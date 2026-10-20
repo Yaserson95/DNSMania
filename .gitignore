@@ -1,0 +1,13 @@
+# Сборка
+build/
+dist/
+packaging/obj/
+
+# Qt Creator / IDE
+*.user
+*.user.*
+.vs/
+.idea/
+
+# Локальные артефакты окружения
+aqtinstall.log

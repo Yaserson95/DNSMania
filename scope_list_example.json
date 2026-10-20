@@ -1,0 +1,194 @@
+[{
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"augsgip.lan\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "augsgip.lan",
+        "PSComputerName": null
+    }, {
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"MRG-L1-OLD-Scope\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "MRG-L1-OLD-Scope",
+        "PSComputerName": null
+    }, {
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"MRG-L18-Scope\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "MRG-L18-Scope",
+        "PSComputerName": null
+    }, {
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"MRG-L4-Scope\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "MRG-L4-Scope",
+        "PSComputerName": null
+    }, {
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"MRG-L5-Scope\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "MRG-L5-Scope",
+        "PSComputerName": null
+    }, {
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"RST-L1-OLD-Scope\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "RST-L1-OLD-Scope",
+        "PSComputerName": null
+    }, {
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"RST-L4-Scope\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "RST-L4-Scope",
+        "PSComputerName": null
+    }, {
+        "CimClass": {
+            "CimSuperClassName": null,
+            "CimSuperClass": null,
+            "CimClassProperties": "FileName ZoneName ZoneScope",
+            "CimClassQualifiers": "ClassVersion = \"1.0.0\" dynamic = True locale = 1033 provider = \"DnsServerPSProvider\"",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimInstanceProperties": [
+            "FileName",
+            "ZoneName = \"augsgip.lan\"",
+            "ZoneScope = \"RST-L5-Scope\""
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsZoneScope",
+            "Path": null
+        },
+        "FileName": null,
+        "ZoneName": "augsgip.lan",
+        "ZoneScope": "RST-L5-Scope",
+        "PSComputerName": null
+    }
+]

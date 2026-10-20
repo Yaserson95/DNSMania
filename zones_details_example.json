@@ -1,0 +1,207 @@
+{
+    "CimClass": {
+        "CimSuperClassName": "DnsServerZone",
+        "CimSuperClass": {
+            "CimSuperClassName": "DnsDomain",
+            "CimSuperClass": "ROOT/Microsoft/Windows/DNS:DnsDomain",
+            "CimClassProperties": "DistinguishedName IsAutoCreated IsDsIntegrated IsPaused IsReadOnly IsReverseLookupZone IsShutdown ZoneName ZoneType",
+            "CimClassQualifiers": "dynamic = True provider = \"DnsServerPSProvider\" ClassVersion = \"1.0.0\" locale = 1033",
+            "CimClassMethods": "",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        },
+        "CimClassProperties": [
+            "DistinguishedName",
+            "IsAutoCreated",
+            "IsDsIntegrated",
+            "IsPaused",
+            "IsReadOnly",
+            "IsReverseLookupZone",
+            "IsShutdown",
+            "ZoneName",
+            "ZoneType",
+            "AllowedDcForNsRecordsAutoCreation",
+            "DirectoryPartitionName",
+            "DynamicUpdate",
+            "IgnorePolicies",
+            "IsSigned",
+            "IsWinsEnabled",
+            "Notify",
+            "NotifyServers",
+            "ReplicationScope",
+            "SecondaryServers",
+            "SecureSecondaries",
+            "ZoneFile"
+        ],
+        "CimClassQualifiers": [
+            "dynamic = True",
+            "provider = \"DnsServerPSProvider\"",
+            "ClassVersion = \"1.0.0\"",
+            "locale = 1033"
+        ],
+        "CimClassMethods": [
+
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsServerPrimaryZone",
+            "Path": null
+        }
+    },
+    "CimInstanceProperties": [{
+            "Name": "DistinguishedName",
+            "Value": "DC=augsgip.lan,cn=MicrosoftDNS,DC=DomainDnsZones,DC=augsgip,DC=lan",
+            "CimType": 14,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsAutoCreated",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsDsIntegrated",
+            "Value": true,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsPaused",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsReadOnly",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsReverseLookupZone",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsShutdown",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "ZoneName",
+            "Value": "augsgip.lan",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "ZoneType",
+            "Value": "Primary",
+            "CimType": 14,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "AllowedDcForNsRecordsAutoCreation",
+            "Value": null,
+            "CimType": 30,
+            "Flags": "Property, NotModified, NullValue",
+            "IsValueModified": false
+        }, {
+            "Name": "DirectoryPartitionName",
+            "Value": "DomainDnsZones.augsgip.lan",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "DynamicUpdate",
+            "Value": "Secure",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IgnorePolicies",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsSigned",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsWinsEnabled",
+            "Value": false,
+            "CimType": 1,
+            "Flags": "Property, ReadOnly, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "Notify",
+            "Value": "NotifyServers",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "NotifyServers",
+            "Value": null,
+            "CimType": 30,
+            "Flags": "Property, NotModified, NullValue",
+            "IsValueModified": false
+        }, {
+            "Name": "ReplicationScope",
+            "Value": "Domain",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "SecondaryServers",
+            "Value": null,
+            "CimType": 30,
+            "Flags": "Property, NotModified, NullValue",
+            "IsValueModified": false
+        }, {
+            "Name": "SecureSecondaries",
+            "Value": "NoTransfer",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "ZoneFile",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NotModified, NullValue",
+            "IsValueModified": false
+        }
+    ],
+    "CimSystemProperties": {
+        "Namespace": "root/Microsoft/Windows/DNS",
+        "ServerName": "MRG-DC01",
+        "ClassName": "DnsServerPrimaryZone",
+        "Path": null
+    },
+    "NotifyServers": null,
+    "SecondaryServers": null,
+    "AllowedDcForNsRecordsAutoCreation": null,
+    "DistinguishedName": "DC=augsgip.lan,cn=MicrosoftDNS,DC=DomainDnsZones,DC=augsgip,DC=lan",
+    "IsAutoCreated": false,
+    "IsDsIntegrated": true,
+    "IsPaused": false,
+    "IsReadOnly": false,
+    "IsReverseLookupZone": false,
+    "IsShutdown": false,
+    "ZoneName": "augsgip.lan",
+    "ZoneType": "Primary",
+    "DirectoryPartitionName": "DomainDnsZones.augsgip.lan",
+    "DynamicUpdate": "Secure",
+    "IgnorePolicies": false,
+    "IsSigned": false,
+    "IsWinsEnabled": false,
+    "Notify": "NotifyServers",
+    "ReplicationScope": "Domain",
+    "SecureSecondaries": "NoTransfer",
+    "ZoneFile": null,
+    "PSComputerName": null
+}

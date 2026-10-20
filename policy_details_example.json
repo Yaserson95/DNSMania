@@ -1,0 +1,126 @@
+{
+    "CimClass": {
+        "CimSuperClassName": null,
+        "CimSuperClass": null,
+        "CimClassProperties": [
+            "Action",
+            "AppliesOn",
+            "Condition",
+            "Content",
+            "Criteria",
+            "IsEnabled",
+            "Level",
+            "Name",
+            "ProcessingOrder",
+            "ZoneName"
+        ],
+        "CimClassQualifiers": [
+            "ClassVersion = \"1.0.0\"",
+            "dynamic = True",
+            "locale = 1033",
+            "provider = \"DnsServerPSProvider\""
+        ],
+        "CimClassMethods": [
+
+        ],
+        "CimSystemProperties": {
+            "Namespace": "root/Microsoft/Windows/DNS",
+            "ServerName": "MRG-DC01",
+            "ClassName": "DnsServerPolicy",
+            "Path": null
+        }
+    },
+    "CimInstanceProperties": [{
+            "Name": "Action",
+            "Value": "Allow",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "AppliesOn",
+            "Value": "QueryProcessing",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "Condition",
+            "Value": "And",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "Content",
+            "Value": "DnsServerPolicyContent",
+            "CimType": 32,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "Criteria",
+            "Value": "DnsServerPolicyCriteria DnsServerPolicyCriteria",
+            "CimType": 32,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "IsEnabled",
+            "Value": true,
+            "CimType": 1,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "Level",
+            "Value": "Zone",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "Name",
+            "Value": "Policy-MRG-L18",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "ProcessingOrder",
+            "Value": 2,
+            "CimType": 6,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }, {
+            "Name": "ZoneName",
+            "Value": "augsgip.lan",
+            "CimType": 14,
+            "Flags": "Property, NotModified",
+            "IsValueModified": false
+        }
+    ],
+    "CimSystemProperties": {
+        "Namespace": "root/Microsoft/Windows/DNS",
+        "ServerName": "MRG-DC01",
+        "ClassName": "DnsServerPolicy",
+        "Path": null
+    },
+    "Action": "Allow",
+    "AppliesOn": "QueryProcessing",
+    "Condition": "And",
+    "Content": [{
+            "CimClass": "root/Microsoft/Windows/DNS:DnsServerPolicyContent",
+            "CimInstanceProperties": "ScopeName = \"MRG-L18-Scope\" Weight = 1",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        }
+    ],
+    "Criteria": [{
+            "CimClass": "root/Microsoft/Windows/DNS:DnsServerPolicyCriteria",
+            "CimInstanceProperties": "Criteria = \"EQ,MRG-L18\" CriteriaType = \"ClientSubnet\"",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        }, {
+            "CimClass": "root/Microsoft/Windows/DNS:DnsServerPolicyCriteria",
+            "CimInstanceProperties": "Criteria = \"EQ,augsgip.lan.\" CriteriaType = \"Fqdn\"",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+        }
+    ],
+    "IsEnabled": true,
+    "Level": "Zone",
+    "Name": "Policy-MRG-L18",
+    "ProcessingOrder": 2,
+    "ZoneName": "augsgip.lan",
+    "PSComputerName": null
+}

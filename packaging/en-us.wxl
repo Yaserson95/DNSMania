@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Overrides the installer database code page for Russian strings (1251).
+  Passed to light via -loc; strings of WixUI_Minimal still resolve from the
+  extension's built-in localization.
+-->
+<WixLocalization Culture="en-us" Codepage="1251" xmlns="http://schemas.microsoft.com/wix/2006/localization" />

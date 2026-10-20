@@ -1,0 +1,14 @@
+Пример использования PolicyService
+.....
+PolicyService* service = new PolicyService(client);
+DNSPolicy** policy_list;
+DNSPolicy* policy, new_policy;
+
+
+service->setZone("augsgip.lan");
+policy_list = service->list(); //Получам список политик (указатели)
+policy = service->get("Policy-MRG-L18"); //Получам определённую политику по имени (указатель)
+
+new_policy = new DNSPolicy(); //Создаем политику, в конструкторе можно сразу задать параметры политики
+service->add(new_policy); //Добавляем политику
+service->save(); //Применяем политики

@@ -1,0 +1,132 @@
+1) Меню:
+dc01    <--- (справа список: зоны, подсети. При нажатии на пункт мы в него проваливаемся) 
+    Зоны  <--- (справа список зон. При нажатии на пункт мы в него проваливаемся) 
+        company.lan <--- (справа список с пунктами: узлы, области, правила. При нажатии на пункт мы в него проваливаемся) 
+            Узлы    <--- (справа таблица узлов со столбцами по свойствам, окно с содержимым зоны можно убрать) 
+                srv01    <--- Обычный узел (не разворачивается, справа отображается свойства узла в виде таблицы с 2мя столбцами ключ - значение)
+                srv02    <--- Узел с поддоменом (справа отображается таблица вложенных узлов)
+                    @    <--- Обычный узел
+                    adm    <--- Обычный узел
+            Области    <--- Команда: Get-DnsServerZoneScope -ZoneName "company.lan" (не разворачивается, справа таблица с областями со столбцами по свойствам)
+            Правила    <--- Команда: Get-DnsServerQueryResolutionPolicy -ZoneName "company.lan" | Format-List * (не разворачивается, справа таблица с правилами со столбцами по свойствам)
+    Подсети    <---- Команда: Get-DnsServerClientSubnet (не разворачивается, справа таблица с подетями со столбцами по свойствам)
+
+2) Так же можно убрать панель с кнопками под меню, можно вместо неё вынести панель из правой части и менять в соответствии с типом выбранного элемента дерева
+ Выявлено несколько типов элементов дерева:
+	1. Сервер
+	2. Папка "Зоны"
+	3. Папка "Подсети"
+	4. Зона
+	5. Папка "Узлы"
+	6. Папка "Области"
+	7. Папка "Правила"
+	8. Узел
+	9. Узел с поддоменами (узел с узлами)
+
+3) Само приложение должно выглядеть примерно как проводник виндовс (слева дерево навигации, справа рабочая область)
+
+4) Примеры данных
+
+Get-DnsServerZoneScope -ZoneName "company.lan"
+ZoneScope            FileName
+---------            --------
+company.lan
+MRG-L1-OLD-Scope
+MRG-L18-Scope
+MRG-L4-Scope
+MRG-L5-Scope
+RST-L1-OLD-Scope
+RST-L4-Scope
+RST-L5-Scope
+
+Get-DnsServerZoneScope -ZoneName "company.lan"
+
+ZoneScope            FileName
+---------            --------
+company.lan
+MRG-L1-OLD-Scope
+MRG-L18-Scope
+MRG-L4-Scope
+MRG-L5-Scope
+RST-L1-OLD-Scope
+RST-L4-Scope
+RST-L5-Scope
+
+
+PS> Get-DnsServerZoneScope -ZoneName "company.lan" -Name MRG-L1-OLD-Scope
+
+ZoneScope            FileName
+---------            --------
+MRG-L1-OLD-Scope
+
+
+PS> Get-DnsServerQueryResolutionPolicy -ZoneName "company.lan" | Format-List *
+
+Action                : Allow
+AppliesOn             : QueryProcessing
+Condition             : And
+Content               : {DnsServerPolicyContent}
+Criteria              : {DnsServerPolicyCriteria, DnsServerPolicyCriteria}
+IsEnabled             : True
+Level                 : Zone
+Name                  : Policy-MRG-L1-OLD
+ProcessingOrder       : 1
+ZoneName              : company.lan
+PSComputerName        :
+CimClass              : root/Microsoft/Windows/DNS:DnsServerPolicy
+CimInstanceProperties : {Action, AppliesOn, Condition, Content...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Action                : Allow
+AppliesOn             : QueryProcessing
+Condition             : And
+Content               : {DnsServerPolicyContent}
+Criteria              : {DnsServerPolicyCriteria, DnsServerPolicyCriteria}
+IsEnabled             : True
+Level                 : Zone
+Name                  : Policy-MRG-L4
+ProcessingOrder       : 2
+ZoneName              : company.lan
+PSComputerName        :
+CimClass              : root/Microsoft/Windows/DNS:DnsServerPolicy
+CimInstanceProperties : {Action, AppliesOn, Condition, Content...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Action                : Allow
+AppliesOn             : QueryProcessing
+Condition             : And
+Content               : {DnsServerPolicyContent}
+Criteria              : {DnsServerPolicyCriteria, DnsServerPolicyCriteria}
+IsEnabled             : True
+Level                 : Zone
+Name                  : Policy-MRG-L5
+ProcessingOrder       : 3
+ZoneName              : company.lan
+PSComputerName        :
+CimClass              : root/Microsoft/Windows/DNS:DnsServerPolicy
+CimInstanceProperties : {Action, AppliesOn, Condition, Content...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Action                : Allow
+AppliesOn             : QueryProcessing
+Condition             : And
+Content               : {DnsServerPolicyContent}
+Criteria              : {DnsServerPolicyCriteria, DnsServerPolicyCriteria}
+IsEnabled             : True
+Level                 : Zone
+Name                  : Policy-MRG-L18
+ProcessingOrder       : 4
+ZoneName              : company.lan
+PSComputerName        :
+CimClass              : root/Microsoft/Windows/DNS:DnsServerPolicy
+CimInstanceProperties : {Action, AppliesOn, Condition, Content...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+> Get-DnsServerClientSubnet
+
+Name       IPV4Subnet      IPV6Subnet
+----       ----------      ----------
+MRG-L1-OLD {10.11.0.0/18}
+MRG-L18    {10.20.16.0/24}
+MRG-L4     {10.20.0.0/22}
+MRG-L5     {10.20.4.0/22}
